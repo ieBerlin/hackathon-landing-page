@@ -1,15 +1,9 @@
 import React from "react";
 import "./index.css";
-import FirstSlide from "./FirstSlide";
-import SecondSlide from "./SecondSlide";
-
+import { RouterProvider } from "react-router-dom";
+import routes from "./routes/routes.tsx"
 const App: React.FC = () => {
-  return (
-    <div className="pb-[40px]">
-      <FirstSlide />
-      <SecondSlide />
-    </div>
-  );
+  return <RouterProvider router={routes}/>
 };
 
 export default App;
